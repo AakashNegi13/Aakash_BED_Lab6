@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/studentdb
+    password: 010111011908N13
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  jpa:
+    hibernate:
+      ddl-auto: update
+  security:
+    user:
+      name: user
+      password: ‘password’
+server:
+  servlet:
+    context-path: /StudentManagement
+  port: '8080'
